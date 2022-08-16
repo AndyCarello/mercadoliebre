@@ -51,6 +51,9 @@ main {
     background-color: #ebebeb;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin: 0 auto;
+    width: 90vw;
+
 }
 
 main section img {
@@ -59,8 +62,12 @@ main section img {
 
 main section article {
     background-color: white;
-    margin: 1em;
+    margin: 10px;
     padding: 1em;
+}
+
+.fa-truck {
+    color: #39b54a;
 }
 
 .precio {
