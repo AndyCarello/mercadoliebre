@@ -1,7 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
-    margin: 0;
     }
 
 header {
@@ -19,6 +24,10 @@ header {
     margin: 8px;
 }
 
+#site-bar, #login-bar {
+    display:  none;
+}
+
 nav ul {
     list-style-type: none;
     padding-left: 0;
@@ -29,7 +38,7 @@ nav ul li a {
     color: inherit;
 }
 
-.burger-menu {
+#burger-menu {
     background-color: #1259c3;
     color: white;
     text-align: center;
@@ -52,7 +61,7 @@ main {
     padding-top: 1em;
     padding-bottom: 1em;
     margin: 0 auto;
-    width: 90vw;
+    width: 90%;
 
 }
 
@@ -64,23 +73,51 @@ main section article {
     background-color: white;
     margin: 10px;
     padding: 1em;
+    
+}
+
+.caja-detalles {
+    border-top: #ebebeb 1px solid;
+    padding: 15px;
 }
 
 .fa-truck {
     color: #39b54a;
 }
 
+/*
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
+*/
+
+
 .precio {
+    width: 30%;
     font-size: 18px;
+    
 }
 
 .descuento {
+    width: 70%;
     font-size: 16px;
     color:  #39b54a;
+   
 }
 
 .descripcion {
     font-size: 16px;
+    display: none;
 }
 
 .texto-centrado {
