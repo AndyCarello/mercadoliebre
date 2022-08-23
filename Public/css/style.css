@@ -70,6 +70,13 @@ main {
 main section {
      width: 90%;
      margin: 0 auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+main section h2 {
+    flex-basis:80%;
 }
 
 main section img {
@@ -79,12 +86,19 @@ main section img {
 main section article {
     background-color: white;
     margin: 10px 0px 10px;
+    flex-basis: 70%;
+}
+main section article div.imagen-producto {
+ justify-content: center;
+ display: flex;
 }
 
 .caja-detalles {
     border-top: #ebebeb 1px solid;
     padding: 15px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .fa-truck {
@@ -108,15 +122,19 @@ main section article i{
 
 
 .precio {
-    width: 30%;
+    /* width: 30%; */
     font-size: 18px;
+    flex-grow: 0.3;
+   
     
 }
 
 .descuento {
-    width: 70%;
+    /* width: 70%; */
     font-size: 16px;
     color:  #39b54a;
+    flex-grow: 0.7;
+    
    
 }
 

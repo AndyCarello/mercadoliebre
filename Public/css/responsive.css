@@ -3,6 +3,8 @@
     main section article {
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
         margin: 10px; 
+        flex-basis: 35%;
+        flex-grow: 0.5;
     }
 
     .descripcion {
@@ -20,5 +22,8 @@
 
 /*media para desktop*/
 @media (min-width: 769px){
-
+    main section article {
+        flex-basis: 20%;
+        flex-grow: 0.25;
+    }
 }
