@@ -60,9 +60,12 @@ main {
     background-color: #ebebeb;
     padding-top: 1em;
     padding-bottom: 1em;
-    margin: 0 auto;
-    width: 90%;
+    
+}
 
+main section {
+     width: 90%;
+     margin: 0 auto;
 }
 
 main section img {
@@ -79,6 +82,7 @@ main section article {
 .caja-detalles {
     border-top: #ebebeb 1px solid;
     padding: 15px;
+    position: relative;
 }
 
 .fa-truck {
@@ -126,11 +130,12 @@ main section article i{
 
 footer {
     color:  #666;
-    margin: 1em;
+   
 }
 
 footer section {
-    margin: 3em;
+   margin: 0 auto;
+    width: 90%;
 }
 
 footer h3 {
