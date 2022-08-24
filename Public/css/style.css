@@ -58,6 +58,7 @@ h2 {
 
 .home-banner {
     width: 100%;
+    display: block;
 }
 
 main {
