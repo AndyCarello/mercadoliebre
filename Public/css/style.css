@@ -88,7 +88,12 @@ main section article {
     background-color: white;
     margin: 10px 0px 10px;
     flex-basis: 70%;
+    flex-grow: 1;
 }
+main section article:hover .descripcion { 
+    visibility: visible;
+}
+
 main section article div.imagen-producto {
  justify-content: center;
  display: flex;
@@ -107,6 +112,7 @@ main section article div.imagen-producto {
 }
 
 
+
 main section article i{
     display: block;
     font-size: 16px;
@@ -121,6 +127,10 @@ main section article i{
     top: -15px;
 }
 
+main section article i:hover {
+   transform:rotate(-90deg);
+   transition-duration: 2s;
+}
 
 .precio {
     /* width: 30%; */
@@ -142,6 +152,7 @@ main section article i{
 .descripcion {
     font-size: 16px;
     display: none;
+    visibility: hidden;
 }
 
 
