@@ -166,11 +166,17 @@ footer {
    
 }
 
+footer section article {
+    flex-basis: 26%;
+    flex-grow: 1;
+} 
+  
 footer section {
    margin: 0 auto;
     width: 90%;
     padding-top: 5vw;
     padding-bottom: 5vw;
+    display: flex;
 }
 
 footer section article {
@@ -186,8 +192,11 @@ footer section p {
     margin: 0;
 }
 
-.icono-footer {
+.icono-footer{
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+}
+.color:hover {
+    color:#EAC926
 }
