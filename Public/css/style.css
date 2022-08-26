@@ -61,6 +61,10 @@ h2 {
     display: block;
 }
 
+.button-color:hover {
+    background-color: #0022AA;
+} 
+
 main {
     background-color: #ebebeb;
     padding-top: 5vw;
