@@ -11,34 +11,94 @@ body {
 
 header {
     background-color: #EAC926;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top:2em;
+    padding-bottom: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
 }
 
-#logo-mercado-liebre {
-    margin: 8px;
-    width: 50%;
+header div#header-logo {
+    flex-basis: 34%;
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#search-bar {
-    margin: 8px;
+header div#header-logo img {
+    max-width: 75%;
 }
 
-#site-bar, #login-bar {
-    display:  none;
+header div#search-bar {
+    flex-basis: 34%;
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    border-radius: 5%;
+    display: flex;
+    margin: 0 1em;
 }
 
-nav ul {
+header form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 34%;
+    flex-grow: 1;
+    width: 100%;
+}
+
+header form input {
+    min-width: 0;
+    width: 1%;
+    flex: 1 1 auto;
+    }
+
+header div#search-bar form button {
+    background-color: rgba(255,255,255,0);
+    border-style: none;
+    margin-right: 0.5em;
+}
+
+header div#cuotas {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 51%;
+    text-align: center;
+    align-items: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: inherit;
 }
 
-#burger-menu {
+header p#cuotas {
+    flex-basis: 51%;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+header div#contenedor-burger {
+    justify-content: center;
+    flex-basis: 51%;
+    flex-grow: 1;
+}
+
+header div div#burger-menu {
     background-color: #1259c3;
     color: white;
     text-align: center;
@@ -52,18 +112,10 @@ nav ul li a {
     margin: 0 auto;
 }
 
-h2 {
-    font-size: 24px;
-}
-
 .home-banner {
     width: 100%;
     display: block;
 }
-
-.button-color:hover {
-    background-color: #0022AA;
-} 
 
 main {
     background-color: #ebebeb;
@@ -77,45 +129,39 @@ main section {
      margin: 0 auto;
      display: flex;
      flex-wrap: wrap;
-     justify-content: space-between;
+     gap: 10px;
 }
 
 main section h2 {
-    flex-basis:80%;
-}
-
-main section img {
-    width: 75%;
+    flex-basis:51%;
+    flex-grow: 1;
+    font-size: 24px;
 }
 
 main section article {
     background-color: white;
-    margin: 10px 0px 10px;
-    flex-basis: 70%;
+    flex-basis: 51%;
     flex-grow: 1;
-}
-main section article:hover .descripcion { 
-    visibility: visible;
+    
 }
 
 main section article div.imagen-producto {
  justify-content: center;
  display: flex;
+ padding: 5%;
 }
 
-.caja-detalles {
+main section article div img {
+    max-width: 75%;
+}
+
+main section article div.caja-detalles {
     border-top: #ebebeb 1px solid;
     padding: 15px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
 }
-
-.fa-truck {
-    color: #39b54a;
-}
-
-
 
 main section article i{
     display: block;
@@ -129,6 +175,7 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+    color: #39b54a;
 }
 
 main section article i:hover {
@@ -136,67 +183,196 @@ main section article i:hover {
    transition-duration: 2s;
 }
 
-.precio {
+main section article p.precio {
     /* width: 30%; */
     font-size: 18px;
-    flex-grow: 0.3;
-   
-    
+    flex-grow: 0.3;   
 }
 
-.descuento {
+main section article p.descuento {
     /* width: 70%; */
     font-size: 16px;
     color:  #39b54a;
-    flex-grow: 0.7;
-    
-   
+    flex-grow: 0.7;   
 }
 
-.descripcion {
+main section article p.descripcion {
     font-size: 16px;
     display: none;
-    visibility: hidden;
 }
-
-
 
 footer {
     color:  #666;
-   
+    padding-top: 2em;
+    padding-bottom: 0.5em;
 }
-
-footer section article {
-    flex-basis: 26%;
-    flex-grow: 1;
-} 
   
 footer section {
-   margin: 0 auto;
+    margin: 0 auto;
     width: 90%;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    
 }
 
 footer section article {
     text-align: center;
-    margin: 10px;
+    flex-basis: 51%;
+    flex-grow: 1;
+    padding-left: 2em;
+    padding-right: 2em;
 }
-
-footer h3 {
-    margin: 0;
-}
-
-footer section p {
-    margin: 0;
-}
-
-.icono-footer{
+footer section article i {
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
 }
-.color:hover {
+
+footer section article i:hover {
     color:#EAC926
+}
+
+footer section article h3 {
+    margin: 0px;
+    font-size: 12px;
+}
+
+footer section article p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+footer section p {
+    flex-basis: 51%;
+    flex-grow: 1;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+/* media para tablet*/
+@media (min-width: 361px){
+
+    header div#header-logo {
+        flex-basis: 25%;
+    }
+
+    header form{
+        flex-basis: 25%;
+    }
+    
+    header div#cuotas{
+        flex-basis: 25%;
+    }
+
+    main section h2 {
+        flex-basis: 90%;
+        flex-grow: 1;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    header nav ul {
+        display: inline-flex;
+        column-gap: 0.5em;
+    }
+        
+    main section article {
+        flex-basis: 34%;
+        flex-grow: 1;
+    }
+
+    main section article:hover {
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 ); 
+    } 
+
+    main section article p.descripcion {
+        display: block;
+    }
+
+    header div#contenedor-burger {
+        display: none;
+    }
+
+}
+
+/* Estilos formulario login */
+
+main form#formulario-login {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top:2em;
+    padding-bottom: 2em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    row-gap: 1em;
+    
+}
+
+main form#formulario-login input {
+    flex-grow: 1;
+    flex-basis: 51%;
+    height: 2em;
+    border-style: none;
+    text-align: center;
+    border-radius: 0.25em;
+    
+}
+
+main form#formulario-login input[type="submit"] {
+    flex-basis: 51%;
+    flex-grow: 1;
+    height: 2em;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#0022AA;
+    color: #0022AA;
+    background-color: white;
+    font-weight: bold;
+}
+
+main form#formulario-login input[type="submit"]:hover {
+   background-color: #0022AA;
+   color: white;
+}
+/* Estilos formulario registro */
+
+
+
+/*media para desktop*/
+@media (min-width: 769px){
+
+    header div#header-logo {
+        flex-basis: 15%;
+    }
+
+    header form{
+        flex-basis: 60%;
+    }
+    
+    header div#cuotas{
+        flex-basis: 15%;
+    }
+
+    main section article {
+        flex-basis: 20%;
+        flex-grow: 0.25;
+    }
+    footer section article {
+        flex-basis: 26%;
+        flex-grow: 1;
+    }
+    main form#formulario-login {
+        padding-right: 25vw;
+        padding-left: 25vw;
+    }
 }

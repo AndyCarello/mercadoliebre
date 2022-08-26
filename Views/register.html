@@ -4,21 +4,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registro</title>  
+        <title>Mercado Liebre</title>  
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet"> 
-        <link href="css/responsive.css" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet">
          
     </head>
     <body>
         <header>
-            <img id="logo-mercado-liebre" src="images/logo-mercado-liebre.svg">
-            <div id="search-bar">Lugar para poner la barra de busqueda</div>
-            <p class="texto-centrado"><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</p>
+            <div id="header-logo">
+                <img id="logo-mercado-liebre" src="images/logo-mercado-liebre.svg">
+            </div>            
+            <form action="#" method="GET">
+                    <input type="text" name="busqueda" placeholder="Buscar...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            
+            <div id="cuotas" >
+                <p class="texto-centrado"><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</p>
+            </div>
             <nav>
                 <ul id="site-bar">
                     <li><a href="#">Ofertas</a></li>
@@ -32,11 +39,14 @@ rel="stylesheet" />
                     <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
-            <div id="burger-menu">
-                <i class="fas fa-bars"></i>
+            <div id="contenedor-burger">
+                <div id="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
+               
         </header>
-            <img class="home-banner" src="/images/img-home-banner.jpg" alt="Banner del Home">
+        <img class="home-banner" src="/images/img-home-banner.jpg" alt="Banner del Home">
         <main>
    <form action="register" method="POST">
         <div>
