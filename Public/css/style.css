@@ -251,7 +251,67 @@ footer section p {
     margin-bottom: 1em;
 }
 
+/* Estilos formulario login */
 
+main form#formulario-login {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top:2em;
+    padding-bottom: 2em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    row-gap: 1em;
+    
+}
+
+main form#formulario-login input {
+    flex-grow: 1;
+    flex-basis: 51%;
+    height: 2em;
+    border-style: none;
+    text-align: center;
+    border-radius: 0.25em;
+    
+}
+
+main form#formulario-login input[type="submit"] {
+    flex-basis: 51%;
+    flex-grow: 1;
+    height: 2em;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#0022AA;
+    color: #0022AA;
+    background-color: white;
+    font-weight: bold;
+}
+
+main form#formulario-login input[type="submit"]:hover {
+   background-color: #0022AA;
+   color: white;
+}
+/* Estilos formulario registro */
+
+main form#formulario-registro {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 5vw;
+    padding-left: 5vw; 
+}
+main form#formulario-registro input {
+    flex-grow: 1;
+    flex-basis: 51%;
+    height: 2em;
+    border-style: none;
+    text-align: center;
+    border-radius: 0.25em;
+    
+}
 
 /* media para tablet*/
 @media (min-width: 361px){
@@ -303,49 +363,6 @@ footer section p {
     }
 
 }
-
-/* Estilos formulario login */
-
-main form#formulario-login {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding-top:2em;
-    padding-bottom: 2em;
-    padding-right: 5vw;
-    padding-left: 5vw;
-    row-gap: 1em;
-    
-}
-
-main form#formulario-login input {
-    flex-grow: 1;
-    flex-basis: 51%;
-    height: 2em;
-    border-style: none;
-    text-align: center;
-    border-radius: 0.25em;
-    
-}
-
-main form#formulario-login input[type="submit"] {
-    flex-basis: 51%;
-    flex-grow: 1;
-    height: 2em;
-    border-style: solid;
-    border-width: 1px;
-    border-color:#0022AA;
-    color: #0022AA;
-    background-color: white;
-    font-weight: bold;
-}
-
-main form#formulario-login input[type="submit"]:hover {
-   background-color: #0022AA;
-   color: white;
-}
-/* Estilos formulario registro */
-
 
 
 /*media para desktop*/
