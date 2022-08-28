@@ -300,8 +300,8 @@ main form#formulario-registro {
     margin: 0 auto;
     padding-top: 2em;
     padding-bottom: 2em;
-    padding-right: 5vw;
-    padding-left: 5vw; 
+    padding-left: 20%;
+    padding-right: 20%;
 }
 main form#formulario-registro input {
     flex-grow: 1;
@@ -311,7 +311,35 @@ main form#formulario-registro input {
     text-align: center;
     border-radius: 0.25em;
     
+} 
+
+main form#formulario-registro h4 {
+    margin-bottom: 1em;
 }
+main form#formulario-registro div#perfiles {
+    display: flex;
+}
+main form#formulario-registro input[type="radio"] {
+    flex-grow: initial;
+    flex-basis: initial;
+    height: initial;
+    border-style: none;
+    text-align: center;
+    border-radius: 0.25em;
+}
+
+main form#formulario-registro div#intereses {
+    display: flex;
+}
+main form#formulario-registro input[type="checkbox"] {
+    flex-grow: initial;
+    flex-basis: initial;
+    height: initial;
+    border-style: none;
+    text-align: center;
+    border-radius: 0.25em;
+}
+
 
 /* media para tablet*/
 @media (min-width: 361px){
