@@ -19,7 +19,7 @@
         <div id="header-logo">
             <img id="logo-mercado-liebre" src="images/logo-mercado-liebre.svg">
         </div>
-        <form id="formulario-register" action="#" method="GET">
+        <form id="formulario-registro" action="#" method="GET">
             <input type="text" name="busqueda" placeholder="Buscar...">
             <button type="submit"><i class="fas fa-search"></i></button>
         </form>
@@ -57,51 +57,58 @@
                 <input type="text" name="nombredeusuario" id="nombredeusuario" placeholder="Nombre de Usuario" required>
            
                 <input type="email" name="email" placeholder="E-mail" required>
-                <label for="fechadenacimiento">Fecha de Nacimiento:</label>
-                <input type="date" name="fechadenacimiento" id="fechadenacimiento" required>
+                <input type="text" name="fechadenacimiento" id="fechadenacimiento" placeholder="Fecha de nacimiento" onfocus="(this.type='date')" required>
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
-            <div>
+            <div id="tipoperfil">
                 <h4>Tipo de Perfil</h4>
-            </div>
-            <div id="perfiles">
-                <input type="radio" name="perfil" id="vendedor" value="vendedor">
-                <label for="vendedor">vendedor:</label>
-           
-                <input type="radio" name="perfil" id="comprador" value="comprador">
-                <label for="Compradorr">comprador:</label>
-            </div>
-            <div>
-                <h4>Categorias de Interes</h4>
-                <div id="intereses">
-                    <input type="checkbox" name="electro" id="electro" value="electro">
-                    <label for="electro">Electro:</label>
-                
-                    <input type="checkbox" name="moda" id="moda" value="moda">
-                    <label for="moda">Moda</label>
-                
-                    <input type="checkbox" name="hogar" id="hogar" value="hogar">
-                    <label for="hogar">Hogar</label>
-                
-                    <input type="checkbox" name="jugueteria" id="jugueteria" value="jugueteria">
-                    <label for="jugueteria">Jugueteria</label>
-                
-                    <input type="checkbox" name="vidasana" id="vidasana" value="vidasana">
-                    <label for="vidasana">Vida sana</label>
+            
+                <div id="perfiles">
+                    <div class="perfil">
+                        <input type="radio" name="perfil" id="vendedor" value="vendedor">
+                        <label for="vendedor">Vendedor</label>
+                    </div>
+                    <div class="perfil">
+                        <input type="radio" name="perfil" id="comprador" value="comprador">
+                        <label for="Compradorr">Comprador</label>
+                    </div>                   
                 </div>
             </div>
-            <div>
+            <div id="categoriasinteres">
+                <h4>Categorias de Interes</h4>
+                <div id="intereses">
+                    <div class="interes">
+                        <input type="checkbox" name="electro" id="electro" value="electro">
+                        <label for="electro">Electro</label>
+                    </div>
+                    <div class="interes">
+                        <input type="checkbox" name="moda" id="moda" value="moda">
+                        <label for="moda">Moda</label>
+                    </div>
+                    <div class="interes">
+                        <input type="checkbox" name="hogar" id="hogar" value="hogar">
+                        <label for="hogar">Hogar</label>
+                    </div>
+                    <div class="interes">
+                        <input type="checkbox" name="jugueteria" id="jugueteria" value="jugueteria">
+                        <label for="jugueteria">Jugueteria</label>
+                    </div>
+                    <div class="interes">
+                        <input type="checkbox" name="vidasana" id="vidasana" value="vidasana">
+                        <label for="vidasana">Vida sana</label>
+                    </div>
+                </div>
+            </div>
+            <div id="fotoperfil">
                 <h4>Foto de Perfil</h4>
                 <input type="file" name="fotodeperfil" id="fotodeperfil">
             </div>
-            <div>
+            <div id="passwords">
                 <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
                 <input type="password" name="confirmarcontrasena" id="confirmarcontrasena"
                     placeholder="Confirmar Contraseña">
             </div>
-            <div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
         </form>
     </main>
     <footer>

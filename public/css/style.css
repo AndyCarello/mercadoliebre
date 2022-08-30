@@ -47,18 +47,29 @@ header form {
     flex-basis: 34%;
     flex-grow: 1;
     width: 100%;
+    background-color: white;
+    border-style: none;
+    border-radius: 1em;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 header form input {
     min-width: 0;
     width: 1%;
     flex: 1 1 auto;
+    background-color: rgba(255,255,255,0);
+    border-style: none;
     }
 
-header div#search-bar form button {
+header form button {
     background-color: rgba(255,255,255,0);
     border-style: none;
     margin-right: 0.5em;
+}
+
+header form button i {
+    color: lightgray;
 }
 
 header div#cuotas {
@@ -136,6 +147,8 @@ main section h2 {
     flex-basis:51%;
     flex-grow: 1;
     font-size: 24px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 main section article {
@@ -186,13 +199,15 @@ main section article i:hover {
 main section article p.precio {
     /* width: 30%; */
     font-size: 18px;
-    flex-grow: 0.3;   
+    flex-grow: 0.3;
+    flex-basis: 25%;
 }
 
 main section article p.descuento {
     /* width: 70%; */
     font-size: 16px;
     color:  #39b54a;
+    flex-basis: 60%;
     flex-grow: 0.7;   
 }
 
@@ -294,14 +309,15 @@ main form#formulario-login input[type="submit"]:hover {
 /* Estilos formulario registro */
 
 main form#formulario-registro {
+
     display: flex;
-    flex-direction: column;
-    row-gap: 1em;
+    flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 2em;
+    padding-top:2em;
     padding-bottom: 2em;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    row-gap: 1em;
 }
 main form#formulario-registro input {
     flex-grow: 1;
@@ -313,31 +329,111 @@ main form#formulario-registro input {
     
 } 
 
-main form#formulario-registro h4 {
+main form#formulario-registro div#tipoperfil {
+    flex-basis: 51%;
+    flex-grow: 1;
     margin-bottom: 1em;
-}
-main form#formulario-registro div#perfiles {
     display: flex;
-}
-main form#formulario-registro input[type="radio"] {
-    flex-grow: initial;
-    flex-basis: initial;
-    height: initial;
-    border-style: none;
-    text-align: center;
-    border-radius: 0.25em;
+    flex-wrap: wrap;
 }
 
-main form#formulario-registro div#intereses {
-    display: flex;
+main form#formulario-registro div#tipoperfil h4 {
+    flex-basis: 51%;
+    flex-grow: 1;
+    margin-bottom: 0.5em;
+    
 }
-main form#formulario-registro input[type="checkbox"] {
+main form#formulario-registro div#tipoperfil div#perfiles {
+    flex-basis: 51%;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main form#formulario-registro div#tipoperfil div#perfiles div.perfil{
+    display: flex;
+    align-items: center;
+}
+
+main form#formulario-registro div#tipoperfil div#perfiles div.perfil label{
+    margin-left: 0.25em;
+}
+
+main form#formulario-registro div#categoriasinteres {
+    flex-basis: 51%;
+    flex-grow: 1;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main form#formulario-registro div#categoriasinteres h4 {
+    flex-basis: 51%;
+    flex-grow: 1;
+    margin-bottom: 0.5em;
+    
+}
+main form#formulario-registro div#categoriasinteres div#intereses {
+    flex-basis: 51%;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main form#formulario-registro div#categoriasinteres div#intereses div.interes {
+    display: flex;
+    align-items: center;
+    flex-basis: 26%;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+main form#formulario-registro div#categoriasinteres div#intereses div.interes input[type="checkbox"] {
     flex-grow: initial;
     flex-basis: initial;
-    height: initial;
-    border-style: none;
-    text-align: center;
-    border-radius: 0.25em;
+}
+
+main form#formulario-registro div#categoriasinteres div#intereses div.interes label{
+    margin-left: 0.25em;
+    white-space: nowrap;
+}
+
+main form#formulario-registro div#fotoperfil {
+    flex-basis: 51%;
+    flex-grow: 1;
+}
+
+main form#formulario-registro div#passwords {
+    flex-basis: 51%;
+    flex-grow: 1;
+    display: flex;
+    column-gap: 2em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+
+main form#formulario-registro div#passwords input {
+    flex-grow: 1;
+    flex-basis: 34%;
+}
+
+main form#formulario-registro button {
+    flex-basis: 51%;
+    flex-grow: 1;
+    height: 2em;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#0022AA;
+    color: #0022AA;
+    background-color: white;
+    font-weight: bold;
+}
+
+main form#formulario-registro button:hover {
+    background-color: #0022AA;
+   color: white;
 }
 
 
@@ -361,17 +457,7 @@ main form#formulario-registro input[type="checkbox"] {
         flex-grow: 1;
     }
 
-    header nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex-grow: 1;
-    }
 
-    header nav ul {
-        display: inline-flex;
-        column-gap: 0.5em;
-    }
         
     main section article {
         flex-basis: 34%;
@@ -384,11 +470,11 @@ main form#formulario-registro input[type="checkbox"] {
 
     main section article p.descripcion {
         display: block;
+        flex-grow: 1;
+        flex-basis: 51%;
     }
 
-    header div#contenedor-burger {
-        display: none;
-    }
+    
 
 }
 
@@ -396,8 +482,21 @@ main form#formulario-registro input[type="checkbox"] {
 /*media para desktop*/
 @media (min-width: 769px){
 
+    header{
+        padding-bottom: 0px;
+    }
+
     header div#header-logo {
         flex-basis: 15%;
+    }
+
+    nav {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 1.3em;
+
     }
 
     header form{
@@ -419,5 +518,41 @@ main form#formulario-registro input[type="checkbox"] {
     main form#formulario-login {
         padding-right: 25vw;
         padding-left: 25vw;
+    }
+    main form#formulario-registro {
+        padding-right: 25vw;
+        padding-left: 25vw;
+    }
+    
+    header div#contenedor-burger {
+        display: none;
+    }    
+    
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    header nav ul {
+        display: inline-flex;
+        column-gap: 0.5em;
+    }
+
+    main section article p.descripcion {
+        visibility: hidden;
+    }
+
+    main section article:hover p.descripcion {
+        visibility: visible;
+    }
+
+    main form#formulario-registro div#categoriasinteres div#intereses div.interes {
+        display: flex;
+        align-items: center;
+        flex-basis: 15%;
+        flex-grow: 1;
+        justify-content: center;
     }
 }
